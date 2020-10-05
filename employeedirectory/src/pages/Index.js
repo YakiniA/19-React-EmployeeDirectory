@@ -8,6 +8,7 @@ import SearchResults from "../components/SearchResults";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
+
 class Index extends Component {
 
     state = {

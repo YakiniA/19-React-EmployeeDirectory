@@ -1,4 +1,5 @@
 import React from "react";
+import dateformat from "dateformat";
 
 function Table(props) {
     // console.log("props" +props);
@@ -31,23 +32,18 @@ function Table(props) {
          
 
               {props.employees.map( (employee, index) => (
-                  
+                 
                         <tr>
-                        
-                        
                             <th scope="row">{index+1}</th>
                             <td><img src={employee.picture.thumbnail} alt="employee picture"></img></td>
                             <td>{employee.name.first} {employee.name.last}</td>
                             <td>{employee.phone} </td>
                             <td>{employee.email}</td>
-                            <td>{employee.dob.date}</td>
-                           
+                            <td>{dateformat(employee.dob.date, "mm-dd-yyyy")}</td>    
                         </tr>
                         
                         ))} 
  
-           
-        
          </tbody>
          </table>
     );

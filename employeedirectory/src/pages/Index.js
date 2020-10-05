@@ -12,7 +12,8 @@ class Index extends Component {
 
     state = {
         search: "",
-        employees: "",
+        employees: [],
+        // dob: "",
         results: [],
         error: ""
       };
@@ -21,7 +22,8 @@ class Index extends Component {
   componentDidMount() {
     API.getEmployees()
       .then(res => {
-          this.setState({ employees: res.data.results })
+          this.setState({ employees: res.data.results})
+          // this.setState({ dob: res.data.results.dob })
           console.log(res);
           
       })

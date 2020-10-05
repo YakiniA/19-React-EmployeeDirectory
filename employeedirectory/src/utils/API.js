@@ -13,6 +13,6 @@ export default {
     return axios.get("https://dog.ceo/api/breeds/list");
   },
   getEmployees: function() {
-    return axios.get("https://randomuser.me/api/?results=200&nat=us");
+    return axios.get("https://randomuser.me/api/?results=20&nat=us");
   },
 };

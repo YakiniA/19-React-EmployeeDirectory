@@ -12,7 +12,7 @@ class Index extends Component {
 
     state = {
         search: "",
-        employees: [],
+        employees: "",
         results: [],
         error: ""
       };
@@ -20,7 +20,12 @@ class Index extends Component {
  // When the component mounts, get a list of all available base breeds and update this.state.breeds
   componentDidMount() {
     API.getEmployees()
-      .then(res => this.setState({ employees: res.data.message }))
+      .then(res => {
+          this.setState({ employees: res.data.results })
+          console.log(res);
+          
+      })
+      
       .catch(err => console.log(err));
   }
 
@@ -39,18 +44,18 @@ render(){
             <h1>Welcome to the Employee Directory!</h1>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col size="md-12">
           <SearchForm
-            // handleFormSubmit={this.handleFormSubmit}
-            handleInputChange={this.handleInputChange}
-            employees={this.state.employees}
-          />
-          <SearchResults results={this.state.results} />
+             handleInputChange={this.handleInputChange}
+             employees={this.state.employees}
+           />
+           <SearchResults results={this.state.results} /> 
+           
           </Col>
-        </Row>
+        </Row> */}
         <Row>
-            <Table />
+            <Table employees = {this.state.employees}/>
 
            
         </Row>

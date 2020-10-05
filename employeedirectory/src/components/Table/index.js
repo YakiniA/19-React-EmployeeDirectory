@@ -1,7 +1,7 @@
 import React from "react";
 
 function Table(props) {
-
+    console.log("props" +props);
     return(
         <table class="table table-striped">
         <thead>
@@ -15,10 +15,18 @@ function Table(props) {
         </thead>
         <tbody>
             <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+{/* 
+                 {props.employees.map(employee => (
+                    <div>
+                    <th scope="row">1</th>
+                    <td>{employee.picture.thumbnail}</td>
+                    <td>{employee.name.first} {employee.name.second}</td>
+                    <td>{employee.phone}</td>
+                    <td>{employee.email}</td>
+                    <td>{employee.dob}</td>
+                    </div>
+                ))}
+           */}
             </tr>
         
         </tbody>

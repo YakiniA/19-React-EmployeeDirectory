@@ -35,7 +35,7 @@ function Table(props) {
                  
                         <tr>
                             <th scope="row">{index+1}</th>
-                            <td><img src={employee.picture.thumbnail} alt="employee picture"></img></td>
+                            <td><img src={employee.picture.medium} alt="employee picture"></img></td>
                             <td>{employee.name.first} {employee.name.last}</td>
                             <td>{employee.phone} </td>
                             <td>{employee.email}</td>

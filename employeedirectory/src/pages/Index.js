@@ -44,7 +44,7 @@ render(){
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <h1>Welcome to the Employee Directory!</h1>
+            <h3>Welcome to the Employee Directory!</h3>
           </Col>
         </Row>
         {/* <Row>

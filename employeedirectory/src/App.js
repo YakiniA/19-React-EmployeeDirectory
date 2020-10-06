@@ -14,6 +14,7 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
+          
           <Route exact path="/" component={Index} />
          
         </Wrapper>

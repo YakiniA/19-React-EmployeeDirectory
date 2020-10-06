@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Hero from "../components/Hero";
 import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";

@@ -17,7 +17,7 @@ function Table(props) {
     // console.log(props.dob);
     return(
     
-         <table class="table table-striped">
+         <table className="table table-striped">
          <thead>
              <tr>
              <th scope="col">#</th>
@@ -32,7 +32,7 @@ function Table(props) {
          
 
               {props.employees.map( (employee, index) => (
-                 
+                  
                         <tr>
                             <th scope="row">{index+1}</th>
                             <td><img src={employee.picture.medium} alt="employee picture"></img></td>

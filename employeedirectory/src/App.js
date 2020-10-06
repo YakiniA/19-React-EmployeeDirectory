@@ -16,7 +16,7 @@ function App() {
         <Wrapper>
 
           <Route exact path="/" component={Index} />
-         
+          
          
         </Wrapper>
         <Footer />

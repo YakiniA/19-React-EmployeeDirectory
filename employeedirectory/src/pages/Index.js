@@ -12,12 +12,13 @@ import Col from "../components/Col";
 class Index extends Component {
 
     state = {
-        search: "",
+        search: [],
         employees: [],
         // dob: "",
         query: "",
         results: [],
-        error: ""
+        error: "",
+        isActive: false
       };
 
  // When the component mounts, get a list of all available base breeds and update this.state.breeds
@@ -37,6 +38,11 @@ class Index extends Component {
   handleInputChange = event => {
     console.log(event.target.value);
     this.setState({ search: event.target.value });
+
+    event.target.value
+       ? this.setState({isActive : true})
+       : this.setState({isActive : false});
+    
 
     API.getParticularEmployee(this.state.search)
     .then(res => {
@@ -67,16 +73,16 @@ render(){
           <SearchForm 
              handleInputChange={this.handleInputChange}
              employees={this.state.employees}
+             
            />
-           <SearchResults results={this.state.results} /> 
+  
+          {this.state.isActive ? 
+          <SearchResults results= {this.state.results} /> :  
+          <Table employees = {this.state.employees}/> }
            
           </Col>
         </Row> 
-        <Row>
-            <Table employees = {this.state.employees}/>
-
-           
-        </Row>
+ 
       </Container>
     </div>
   );

@@ -16,6 +16,6 @@ export default {
     return axios.get("https://randomuser.me/api/?results=20&nat=us");
   },
   getParticularEmployee: function(employee) {
-    return axios.get("https://randomuser.me/api/?prefix="+employee+ "&limit=5&nat=us");
+    return axios.get("https://randomuser.me/api/?first=" +employee+ "&limit=5&nat=us");
   },
 };

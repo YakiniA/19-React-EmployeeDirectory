@@ -5,18 +5,19 @@ import "./style.css";
 function SearchForm(props) {
   return (
     <form className="search">
-      <div className="form-group">
-        <label htmlFor="employee">Search:</label>
-        <input
+      <div className="form-group"> 
+        <label htmlFor="employee">Search : </label>
+        <input width= "50%"
           value={props.search}
           onChange={props.handleInputChange}
           name="employee"
           list="employees"
           type="text"
           className="form-control"
-          placeholder="Type in an employee to begin Search"
+          placeholder="Enter employee detail"
           id="employee"
         />
+       
      
        <datalist id="employees">
           {props.employees.map(employee => (

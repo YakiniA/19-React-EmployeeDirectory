@@ -13,7 +13,8 @@ class Index extends Component {
     state = {
         search: [],
         employees: [],
-        // dob: "",
+        searchTerm: "",
+        filteredEmployees: [],
         query: "",
         results: [],
         error: "",
@@ -28,9 +29,13 @@ class Index extends Component {
           // this.setState({ dob: res.data.results.dob })
           console.log(res);
           
-      })
-      
-      .catch(err => console.log(err));
+      }).catch(err => console.log(err));
+
+       if (this.state.filteredEmployees.length < 1) {
+         this.setState({
+             filteredEmployees: this.state.employees
+         });
+     }
   }
 
 
@@ -43,17 +48,30 @@ class Index extends Component {
        : this.setState({isActive : false});
     
 
-    API.getParticularEmployee(this.state.search)
-    .then(res => {
-      console.log("===REs===");
-      console.log(res)
-      if (res.data.status === "error") {
-        throw new Error(res.data.message);
-      }
-      this.setState({ results: res.data.results, error: "" });
-      // this.setState({ employees: res.data.results });
-    })
-    .catch(err => this.setState({ error: err.message }));
+    // API.getParticularEmployee(this.state.search)
+    // .then(res => {
+    //   console.log("===REs===");
+    //   console.log(res)
+    //   if (res.data.status === "error") {
+    //     throw new Error(res.data.message);
+    //   }
+    //   this.setState({ results: res.data.results, error: "" });
+    //   // this.setState({ employees: res.data.results });
+    // })
+    // .catch(err => this.setState({ error: err.message }));
+    // this.setState({
+    //   searchTerm: event.target.value
+    //   });
+
+    //  let userTyped = event.target.value;
+     const filteredList = this.state.employees.filter((item) => {
+         let values = item.name.title + item.name.first + item.name.last + item.gender + item.dob.age + item.email + item.phone;
+         return values.indexOf(this.state.search) !== -1;
+     });
+     console.log(filteredList);
+     this.setState({
+         filteredEmployees: filteredList
+     });
 };
   
 
@@ -76,7 +94,7 @@ render(){
            />
   
           {this.state.isActive ? 
-          <SearchResults results= {this.state.results} /> :  
+          <SearchResults results= {this.state.filteredEmployees} /> :  
           <Table employees = {this.state.employees}/> }
            
           </Col>

@@ -17,11 +17,13 @@ function SearchForm(props) {
           placeholder="Type in an employee to begin Search"
           id="employee"
         />
-        <datalist id="employees">
+     
+       <datalist id="employees">
           {props.employees.map(employee => (
-            <option value={employee} key={employee} />
+            <option value={employee.name.first + " " +employee.name.last} key={employee.name.first} />
           ))}
-        </datalist>
+        </datalist> 
+
         {/* <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
           Search
         </button> */}

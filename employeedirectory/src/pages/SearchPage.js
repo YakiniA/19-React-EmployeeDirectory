@@ -9,7 +9,7 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 
 
-class Index extends Component {
+class SearchPage extends Component {
 
     state = {
         search: "",
@@ -71,15 +71,11 @@ render(){
            
           </Col>
         </Row> 
-        <Row>
-            <Table employees = {this.state.employees}/>
-
-           
-        </Row>
+      
       </Container>
     </div>
   );
   }
 }
 
-export default Index;
+export default SearchPage;

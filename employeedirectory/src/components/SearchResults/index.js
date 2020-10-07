@@ -12,7 +12,7 @@ function SearchResults(props) {
     //   ))}
     // </ul>
 
-    <table className="table table-striped">
+    <table className="table table-striped table table-striped table-dark">
     <thead>
         <tr>
         <th scope="col">#</th>

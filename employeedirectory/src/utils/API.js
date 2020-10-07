@@ -4,6 +4,6 @@ import axios from "axios";
 
 export default {
   getEmployees: function() {
-    return axios.get("https://randomuser.me/api/?results=20&nat=us&origin=*");
+    return axios.get("https://randomuser.me/api/?results=100&nat=us&origin=*");
   },
 };

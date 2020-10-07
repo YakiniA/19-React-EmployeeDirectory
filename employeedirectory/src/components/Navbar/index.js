@@ -6,7 +6,7 @@ import "./style.css";
 function Navbar() {
   return (
  
-      <nav className="navbar  navbar-expand-lg navbar-light justify-content-center" style={{backgroundColor:"#92a8d1", height:"12%"}}>
+      <nav className="navbar  navbar-expand-lg navbar-light justify-content-center" >
       <span className="navbar-brand"><h2>Employee Directory</h2></span>
       </nav>
   );

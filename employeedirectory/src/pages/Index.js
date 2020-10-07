@@ -3,6 +3,7 @@ import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import Table from "../components/Table";
+import Hero from "../components/Hero";
 import SearchResults from "../components/SearchResults";
 import Row from "../components/Row";
 import Col from "../components/Col";
@@ -60,6 +61,8 @@ class Index extends Component {
 render(){
   return (
     <div>
+      <Hero backgroundImage= "../../public/GreenBackground.jpg" />
+        
      
       <Container style={{ marginTop: 30 }}>
         <Row>

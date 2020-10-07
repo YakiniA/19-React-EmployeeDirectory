@@ -9,14 +9,11 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar />
         <Wrapper>
-
+         <Navbar /> 
           <Route exact path="/" component={Index} />
-          
-         
+          <Footer />
         </Wrapper>
-        <Footer />
       </div>
     </Router>
   );

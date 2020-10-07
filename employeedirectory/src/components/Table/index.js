@@ -33,7 +33,7 @@ function Table(props) {
 
               {props.employees.map( (employee, index) => (
                   
-                        <tr>
+                        <tr key={employee.email}>
                             <th scope="row">{index+1}</th>
                             <td><img src={employee.picture.medium} alt="employee picture"></img></td>
                             <td>{employee.name.first} {employee.name.last}</td>

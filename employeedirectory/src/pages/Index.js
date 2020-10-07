@@ -38,7 +38,6 @@ class Index extends Component {
      }
   }
 
-
   handleInputChange = event => {
     console.log(event.target.value);
     this.setState({ search: event.target.value });
@@ -46,24 +45,7 @@ class Index extends Component {
     event.target.value
        ? this.setState({isActive : true})
        : this.setState({isActive : false});
-    
-
-    // API.getParticularEmployee(this.state.search)
-    // .then(res => {
-    //   console.log("===REs===");
-    //   console.log(res)
-    //   if (res.data.status === "error") {
-    //     throw new Error(res.data.message);
-    //   }
-    //   this.setState({ results: res.data.results, error: "" });
-    //   // this.setState({ employees: res.data.results });
-    // })
-    // .catch(err => this.setState({ error: err.message }));
-    // this.setState({
-    //   searchTerm: event.target.value
-    //   });
-
-    //  let userTyped = event.target.value;
+   
      const filteredList = this.state.employees.filter((item) => {
          let values = item.name.title + item.name.first + item.name.last + item.gender + item.dob.age + item.email + item.phone;
          return values.indexOf(this.state.search) !== -1;
@@ -89,6 +71,7 @@ render(){
           <Col size="md-12">
           <SearchForm 
              handleInputChange={this.handleInputChange}
+            //  handleInputChange={this.handleInputChange}
              employees={this.state.employees}
              
            />

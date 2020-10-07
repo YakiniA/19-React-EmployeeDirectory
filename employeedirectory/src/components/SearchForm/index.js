@@ -20,14 +20,17 @@ function SearchForm(props) {
        
      
        <datalist id="employees">
-          {props.employees.map(employee => (
-            <option value={employee.name.first + " " +employee.name.last} key={employee.name.first} />
+          {props.employees.map( (employee, index) => (
+            <option key={employee.email} >
+                {employee.name.first + " " +employee.name.last}
+            </option>
+          
           ))}
         </datalist> 
 
         {/* <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
           Search
-        </button> */}
+        </button>  */}
       </div>
     </form>
   );

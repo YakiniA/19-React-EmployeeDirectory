@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/19-React-EmployeeDirectory/static/css/main.32d2371c.chunk.css",
-    "main.js": "/19-React-EmployeeDirectory/static/js/main.a50649a8.chunk.js",
-    "main.js.map": "/19-React-EmployeeDirectory/static/js/main.a50649a8.chunk.js.map",
-    "runtime-main.js": "/19-React-EmployeeDirectory/static/js/runtime-main.cc140f75.js",
-    "runtime-main.js.map": "/19-React-EmployeeDirectory/static/js/runtime-main.cc140f75.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/19-React-EmployeeDirectory/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.33161fab.chunk.js": "/19-React-EmployeeDirectory/static/js/2.33161fab.chunk.js",
-    "static/js/2.33161fab.chunk.js.map": "/19-React-EmployeeDirectory/static/js/2.33161fab.chunk.js.map",
-    "index.html": "/19-React-EmployeeDirectory/index.html",
-    "precache-manifest.8c27987575423830e536c7cb9306d954.js": "/19-React-EmployeeDirectory/precache-manifest.8c27987575423830e536c7cb9306d954.js",
-    "service-worker.js": "/19-React-EmployeeDirectory/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/19-React-EmployeeDirectory/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.32d2371c.chunk.css.map": "/19-React-EmployeeDirectory/static/css/main.32d2371c.chunk.css.map",
-    "static/js/2.33161fab.chunk.js.LICENSE.txt": "/19-React-EmployeeDirectory/static/js/2.33161fab.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/19-React-EmployeeDirectory/static/media/GreenBackground.75b6fa93.jpg",
-    "static/media/employeeDirectory.png": "/19-React-EmployeeDirectory/static/media/employeeDirectory.4fa82a92.png"
+    "main.css": "/19-React-EmployeeDirectory/employeedirectory/static/css/main.530113ab.chunk.css",
+    "main.js": "/19-React-EmployeeDirectory/employeedirectory/static/js/main.a50649a8.chunk.js",
+    "main.js.map": "/19-React-EmployeeDirectory/employeedirectory/static/js/main.a50649a8.chunk.js.map",
+    "runtime-main.js": "/19-React-EmployeeDirectory/employeedirectory/static/js/runtime-main.2396b075.js",
+    "runtime-main.js.map": "/19-React-EmployeeDirectory/employeedirectory/static/js/runtime-main.2396b075.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/19-React-EmployeeDirectory/employeedirectory/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.33161fab.chunk.js": "/19-React-EmployeeDirectory/employeedirectory/static/js/2.33161fab.chunk.js",
+    "static/js/2.33161fab.chunk.js.map": "/19-React-EmployeeDirectory/employeedirectory/static/js/2.33161fab.chunk.js.map",
+    "index.html": "/19-React-EmployeeDirectory/employeedirectory/index.html",
+    "precache-manifest.6f97925f0d03bed0f4dc3e8af028e744.js": "/19-React-EmployeeDirectory/employeedirectory/precache-manifest.6f97925f0d03bed0f4dc3e8af028e744.js",
+    "service-worker.js": "/19-React-EmployeeDirectory/employeedirectory/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/19-React-EmployeeDirectory/employeedirectory/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.530113ab.chunk.css.map": "/19-React-EmployeeDirectory/employeedirectory/static/css/main.530113ab.chunk.css.map",
+    "static/js/2.33161fab.chunk.js.LICENSE.txt": "/19-React-EmployeeDirectory/employeedirectory/static/js/2.33161fab.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/19-React-EmployeeDirectory/employeedirectory/static/media/GreenBackground.75b6fa93.jpg",
+    "static/media/employeeDirectory.png": "/19-React-EmployeeDirectory/employeedirectory/static/media/employeeDirectory.4fa82a92.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc140f75.js",
+    "static/js/runtime-main.2396b075.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.33161fab.chunk.js",
-    "static/css/main.32d2371c.chunk.css",
+    "static/css/main.530113ab.chunk.css",
     "static/js/main.a50649a8.chunk.js"
   ]
 }

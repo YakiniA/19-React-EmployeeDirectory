@@ -5,4 +5,11 @@ nav.navbar.navbar-default {
 h2{
 
   color:rgb(57, 5, 20);
+  padding: 40px;
+ 
+}
+
+img{
+  float:left;
+  margin-right:10% !important;
 }

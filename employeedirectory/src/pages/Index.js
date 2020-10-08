@@ -57,7 +57,7 @@ render(){
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <h3>Welcome to the Employee Directory!</h3>
+            <h3 style={{textAlign : "center", marginBottom: "2%"}}>Welcome to the Employee Directory!</h3>
           </Col>
         </Row>
         <Row>

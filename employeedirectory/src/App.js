@@ -8,13 +8,13 @@ import Wrapper from "./components/Wrapper";
 function App() {
   return (
     <Router>
-      <div>
         <Wrapper>
-         <Navbar /> 
+          <div>
+          <Navbar /> 
           <Route exact path="/" component={Index} />
           <Footer />
+          </div>
         </Wrapper>
-      </div>
     </Router>
   );
 }

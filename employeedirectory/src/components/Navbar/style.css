@@ -2,14 +2,15 @@ nav.navbar.navbar-default {
   margin-bottom: 0;
 }
 
-h2{
-
+.navbar{
+  padding: 0px !important;
+}
+/* h2{
   color:rgb(57, 5, 20);
   padding: 40px;
- 
-}
+} */
 
-img{
+/* img{
   float:left;
   margin-right:10% !important;
-}
+} */

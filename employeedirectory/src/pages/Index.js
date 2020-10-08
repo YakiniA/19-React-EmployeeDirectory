@@ -22,7 +22,8 @@ class Index extends Component {
   componentDidMount() {
     API.getEmployees()
       .then(res => {
-        this.setState({ employees: res.data.results})
+        const sortedOne = res.data.results.sort(this.compare);
+        this.setState({ employees: sortedOne})
       }).catch(err => console.log(err));
 
        if (this.state.filteredEmployees.length < 1) {
@@ -32,23 +33,22 @@ class Index extends Component {
      }
   }
 
-  // compare(a, b) {
-  //   // Use toUpperCase() to ignore character casing
-  //   const bandA = a.band.toUpperCase();
-  //   const bandB = b.band.toUpperCase();
-  
-  //   let comparison = 0;
-  //   if (bandA > bandB) {
-  //     comparison = 1;
-  //   } else if (bandA < bandB) {
-  //     comparison = -1;
-  //   }
-  //   return comparison;
-  // }
-  
-  // singers.sort(compare);
+  compare = (a,b) =>{
+    console.log(a);
+    const nameA = a.name.first.toUpperCase();
+    const nameB = b.name.first.toUpperCase();
+ 
+    let comparison = 0;
+    if (nameA > nameB) {
+      comparison = 1;
+    } else if (nameA < nameB) {
+      comparison = -1;
+    }
+    return comparison;
+  }
+
   handleInputChange = event => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     this.setState({ search: event.target.value });
 
     event.target.value
@@ -60,23 +60,7 @@ class Index extends Component {
          return values.indexOf(this.state.search) !== -1;
      });
 
-  //    const sortedList = filteredList.filter(prof => {
-  //     // Filter results by doing case insensitive match on name here
-  //     return prof.name.first.toLowerCase().includes(this.state.search.toLowerCase());
-  //     }).sort((a, b) => {
-  //     // Sort results by matching name with keyword position in name
-  //     if(a.name.first.toLowerCase().indexOf(this.state.search.toLowerCase()) > b.name.toLowerCase().indexOf(this.state.search.toLowerCase())) {
-  //         return 1;
-  //     } else if (a.name.first.toLowerCase().indexOf(this.state.search.toLowerCase()) < b.name.first.toLowerCase().indexOf(this.state.search.toLowerCase())) {
-  //         return -1;
-  //     } else {
-  //         if(a.name.first > b.name.first)
-  //             return 1;
-  //         else
-  //             return -1;
-  //     }
-  // });
-     console.log(filteredList);
+    //  console.log(filteredList);
      this.setState({
          filteredEmployees: filteredList
      });
@@ -86,7 +70,7 @@ render(){
   return (
     <div>
      
-      <Container style={{ marginTop: 30 }}>
+      <Container style={{ marginTop: 8 }}>
         <Row>
           <Col size="md-12">
             <h3 style={{textAlign : "center", marginBottom: "2%"}}>Welcome to the Employee Directory!</h3>

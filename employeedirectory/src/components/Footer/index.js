@@ -3,7 +3,7 @@ import "./style.css";
 
 function Footer() {
   return (
-    <footer className="footer fixed-bottom">
+    <footer className="footer">
      Copyright Employee Directory &copy; 2020 
     </footer>
   );

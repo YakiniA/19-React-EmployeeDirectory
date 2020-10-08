@@ -4,14 +4,6 @@ import dateformat from "dateformat";
 
 function SearchResults(props) {
   return (
-    // <ul className="list-group search-results">
-    //   {props.results.map(result => (
-    //     <li key={result} className="list-group-item">
-    //       <img alt="employee" src={result} className="img-fluid" />
-    //     </li>
-    //   ))}
-    // </ul>
-
     <table className="table table-striped table table-striped table-dark">
     <thead>
         <tr>
@@ -24,7 +16,6 @@ function SearchResults(props) {
         </tr>
     </thead>
     <tbody>
-    
 
          {props.results.map( (employee, index) => (
             

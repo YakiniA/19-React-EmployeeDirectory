@@ -17,12 +17,13 @@ class Index extends Component {
         results: [],
         error: "",
         isActive: false,
+        loading:false,
         currentPage : 1,
         postsPerPage : 10,
         currentPosts : []
       };
 
- // When the component mounts, get a list of all available base breeds and update this.state.breeds
+ // When the component mounts, get a list of all available employees
   componentDidMount() {
     API.getEmployees()
       .then(res => {
@@ -72,11 +73,7 @@ class Index extends Component {
      this.setState({
          filteredEmployees: filteredList
      });
-
- 
-     
 };
-
 
 render(){
   return (

@@ -2,12 +2,14 @@
   /* min-height: 100%;
   padding-bottom: 100px; */
 
-  background: url('GreenBackground.jpg') center center fixed; 
+  background: url('GreenBackground.jpg'); 
   display: table; 
-  height: 100%; 
+  height: 250%; 
   position:relative;
   width:100%;
   background-size: cover !important;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+
 }

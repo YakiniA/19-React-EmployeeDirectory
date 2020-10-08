@@ -32,6 +32,21 @@ class Index extends Component {
      }
   }
 
+  // compare(a, b) {
+  //   // Use toUpperCase() to ignore character casing
+  //   const bandA = a.band.toUpperCase();
+  //   const bandB = b.band.toUpperCase();
+  
+  //   let comparison = 0;
+  //   if (bandA > bandB) {
+  //     comparison = 1;
+  //   } else if (bandA < bandB) {
+  //     comparison = -1;
+  //   }
+  //   return comparison;
+  // }
+  
+  // singers.sort(compare);
   handleInputChange = event => {
     console.log(event.target.value);
     this.setState({ search: event.target.value });
@@ -44,6 +59,23 @@ class Index extends Component {
          let values = item.name.title + item.name.first + item.name.last + item.gender + item.dob.age +  item.dob + item.email + item.phone;
          return values.indexOf(this.state.search) !== -1;
      });
+
+  //    const sortedList = filteredList.filter(prof => {
+  //     // Filter results by doing case insensitive match on name here
+  //     return prof.name.first.toLowerCase().includes(this.state.search.toLowerCase());
+  //     }).sort((a, b) => {
+  //     // Sort results by matching name with keyword position in name
+  //     if(a.name.first.toLowerCase().indexOf(this.state.search.toLowerCase()) > b.name.toLowerCase().indexOf(this.state.search.toLowerCase())) {
+  //         return 1;
+  //     } else if (a.name.first.toLowerCase().indexOf(this.state.search.toLowerCase()) < b.name.first.toLowerCase().indexOf(this.state.search.toLowerCase())) {
+  //         return -1;
+  //     } else {
+  //         if(a.name.first > b.name.first)
+  //             return 1;
+  //         else
+  //             return -1;
+  //     }
+  // });
      console.log(filteredList);
      this.setState({
          filteredEmployees: filteredList

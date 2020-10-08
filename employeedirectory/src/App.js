@@ -11,7 +11,7 @@ function App() {
       <div>
         <Wrapper>
          <Navbar /> 
-          <Route path="/" component={Index} />
+          <Route exact path="/" component={Index} />
           <Footer />
         </Wrapper>
       </div>

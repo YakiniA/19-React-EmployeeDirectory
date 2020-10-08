@@ -10,7 +10,6 @@ function SearchForm(props) {
       <div className="form-group"> 
         <label htmlFor="employee"></label>
         <input width= "50%"
-          value={props.search}
           onChange={props.handleInputChange}
           name="employee"
           list="employees"

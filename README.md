@@ -43,7 +43,7 @@ I tried to do pagination, it worked fine. But the problem is whenever I go to di
 
 ## Link
 
-Here's the link to my developed Website : [Employee Directory](https://pwa-budgettrackers.herokuapp.com/)
+Here's the link to my developed Website : [Employee Directory](https://yakinia.github.io/19-React-EmployeeDirectory/)
 
 ### Screenshots
 

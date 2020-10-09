@@ -5,6 +5,10 @@ nav.navbar.navbar-default {
 .navbar{
   padding: 0px !important;
 }
+
+.imgNav{
+  pointer-events: none;
+}
 /* h2{
   color:rgb(57, 5, 20);
   padding: 40px;

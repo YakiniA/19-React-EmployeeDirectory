@@ -7,7 +7,7 @@ import employeelogo from './employeeDirectory.png';
 function Navbar() {
   return (
       <nav className="navbar navbar-expand-sm navbar-light justify-content-center">
-        <a className="navbar-brand" href="#top">
+        <a className="imgNav navbar-brand" href="#top">
           <img src={employeelogo} width="250" height="250" alt=""/>
           {/* <h2>Employee Directory</h2> */}
         </a>

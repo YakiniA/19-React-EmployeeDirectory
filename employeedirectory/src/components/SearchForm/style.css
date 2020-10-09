@@ -17,3 +17,22 @@ form.search button[type="submit"] {
   margin-left: 38% !important;
   margin-bottom: 3% !important;
 }
+
+
+@media all and (max-width: 980px)
+{
+  .form-control{
+    width:120% !important;
+    margin-left: -35%;
+ 
+  }
+}
+
+@media all and (max-width: 760px)
+{
+  .form-control{
+   
+    margin-left: -45%;
+   
+  }
+}
